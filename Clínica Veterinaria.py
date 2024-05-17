@@ -3,28 +3,28 @@ from tkinter import messagebox
 from datetime import datetime
 from typing import List
 
- 
 
- 
+
+
 class Persona:
     def __init__(self, nombre: str, telefono: str):
         self.__nombre = nombre
         self.__telefono = telefono
 
     @property
-    def nombre(self):
+    def get_nombre(self):
         return self.__nombre
 
-    @nombre.setter
-    def nombre(self, nombre: str):
+    @get_nombre.setter
+    def get_nombre(self, nombre: str):
         self.__nombre = nombre
 
     @property
-    def telefono(self):
+    def get_telefono(self):
         return self.__telefono
 
-    @telefono.setter
-    def telefono(self, telefono: str):
+    @get_telefono.setter
+    def get_telefono(self, telefono: str):
         self.__telefono = telefono
 
 class Propietario(Persona):
@@ -33,11 +33,11 @@ class Propietario(Persona):
         self.__direccion = direccion
 
     @property
-    def direccion(self):
+    def get_direccion(self):
         return self.__direccion
 
-    @direccion.setter
-    def direccion(self, direccion: str):
+    @get_direccion.setter
+    def get_direccion(self, direccion: str):
         self.__direccion = direccion
 
 class Paciente:
@@ -50,34 +50,34 @@ class Paciente:
         self.__historial_medico = []
 
     @property
-    def nombre(self):
+    def get_nombre(self):
         return self.__nombre
 
-    @nombre.setter
+    @get_nombre.setter
     def nombre(self, nombre: str):
         self.__nombre = nombre
 
     @property
-    def especie(self):
+    def get_especie(self):
         return self.__especie
 
-    @especie.setter
+    @get_especie.setter
     def especie(self, especie: str):
         self.__especie = especie
 
     @property
-    def raza(self):
+    def get_raza(self):
         return self.__raza
 
-    @raza.setter
+    @get_raza.setter
     def raza(self, raza: str):
         self.__raza = raza
 
     @property
-    def edad(self):
+    def get_edad(self):
         return self.__edad
 
-    @edad.setter
+    @get_edad.setter
     def edad(self, edad: int):
         self.__edad = edad
 
