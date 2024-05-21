@@ -4,8 +4,6 @@ from datetime import datetime
 from typing import List
 
 
-
-
 class Persona:
     def __init__(self, nombre: str, telefono: str):
         self.__nombre = nombre
